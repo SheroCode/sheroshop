@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-v5",
+  "version": "1.0.0",
+  "description": "my task bootstrap v5 with sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "sass"
+  ],
+  "author": "shereen mohamed",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "font-awesome": "^4.7.0"
+  }
+}
