@@ -1,0 +1,29 @@
+@use "../custom" as *;
+nav {
+  a {
+    color: $color-navy;
+  }
+  form {
+    border: solid 2px $color-mint;
+    i {
+      color: $color-gray;
+    }
+    input {
+      border: none;
+      border-left: solid 2px $color-gray-extra-light;
+      outline: none;
+    }
+  }
+  ul .dropdown-toggle {
+    border: solid 1px $color-gray-extra-light;
+    box-shadow: 0px 2px 3px 1px $color-gray-extra-light;
+  }
+.navbar__contactus {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+
+  

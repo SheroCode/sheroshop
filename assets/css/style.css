@@ -11854,5 +11854,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+nav a {
+  color: #253d4e;
+}
+nav form {
+  border: solid 2px #bce3c9;
+}
+nav form i {
+  color: #838383;
+}
+nav form input {
+  border: none;
+  border-left: solid 2px #ececec;
+  outline: none;
+}
+nav ul .dropdown-toggle {
+  border: solid 1px #ececec;
+  box-shadow: 0px 2px 3px 1px #ececec;
+}
+nav .navbar__contactus p {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #253d4e;
+}
 
 /*# sourceMappingURL=style.css.map */

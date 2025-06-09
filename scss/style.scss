@@ -1,4 +1,4 @@
-@use "custom";
+@use "./custom" as*;
 //IMPORT THE COMPONENTS
 @use "./components/mixins";
 @use "./components/animations";
@@ -11,3 +11,11 @@
 @use "./sections/products";
 @use "./sections/subscribe";
 @use "./sections/footer";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:$text-color;
+}
