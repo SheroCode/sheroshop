@@ -1,0 +1,27 @@
+@use "../variables" as *;
+@use "../components/mixins";
+
+.products {
+  .card {
+    height: 470px;
+    @extend %common;
+    h2 {
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background-color: $color-mint;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    h6 {
+      color: $color-teal;
+    }
+    p {
+      color: $color-gray-lightest;
+    }
+  }
+}

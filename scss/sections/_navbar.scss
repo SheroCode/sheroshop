@@ -1,8 +1,5 @@
-@use "../custom" as *;
+@use "../variables" as*;
 nav {
-  a {
-    color: $color-navy;
-  }
   form {
     border: solid 2px $color-mint;
     i {
@@ -15,15 +12,16 @@ nav {
     }
   }
   ul .dropdown-toggle {
+    color: $color-teal;
     border: solid 1px $color-gray-extra-light;
-    box-shadow: 0px 2px 3px 1px $color-gray-extra-light;
+    box-shadow:$shadow;
   }
-.navbar__contactus {
+  .navbar__contactus {
     p {
       font-size: 12px;
     }
+  h6{
+    color: $color-teal;
+  }
   }
 }
-
-
-  
