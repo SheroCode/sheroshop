@@ -1,5 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.products .card, .landding .card {
+.products .left-card, .landing .card {
   box-shadow: 0px 2px 3px 1px #ececec;
   border-radius: 1rem;
 }
@@ -7,6 +8,13 @@
 .btn-custom {
   background-color: #3bb77e;
   border-color: #3bb77e;
+}
+
+.btn-add {
+  background-color: #def9ec;
+  border-color: #def9ec;
+  color: #3bb77e;
+  font-size: 14px;
 }
 
 nav form {
@@ -32,13 +40,13 @@ nav .navbar__contactus h6 {
   color: #3bb77e;
 }
 
-.landding .card {
-  height: 479px;
+.landing .card {
+  height: 500px;
 }
-.landding .card h2 {
+.landing .card h2 {
   position: relative;
 }
-.landding .card h2::after {
+.landing .card h2::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -47,37 +55,66 @@ nav .navbar__contactus h6 {
   bottom: 0;
   left: 0;
 }
-.landding .card i {
+.landing .card i {
   color: #bce3c9;
 }
-.landding .banner-content {
+.landing .banner-content {
   border-radius: 2rem;
   background-image: url(/assets/imgs/Rectangle.png);
   background-size: contain;
-  padding: 91px 0 100px 75px;
+  padding: 91px 75px 100px 75px;
 }
-.landding .banner-content p {
+.landing .banner-content p {
   color: #838383;
 }
-.landding .banner-content h1 {
-  font-size: 4.5rem;
+.landing .banner-content h1 {
+  font-size: 4rem;
 }
-.landding .banner-content span {
-  position: relative;
-  right: 40px;
-  text-align: center;
+@media (max-width: 768px) {
+  .landing .banner-content h1 {
+    font-size: 2.5rem;
+  }
 }
-.landding .banner-content input {
-  width: 50%;
+@media (max-width: 768px) and (max-width: 576px) {
+  .landing .banner-content h1 {
+    font-size: 2rem;
+  }
+}
+.landing .banner-content .subscribe-wrapper {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.landing .banner-content .subscribe-wrapper input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+.landing .banner-content .subscribe-wrapper input::placeholder {
+  color: #999;
+}
+.landing .banner-content .subscribe-wrapper i {
+  color: #3bb77e;
+  font-size: 1.2rem;
+}
+.landing .banner-content .subscribe-wrapper .subscribe-btn {
+  background-color: #3bb77e;
+  border: none;
+  padding: 0 1.5rem;
+}
+.landing .banner-content .subscribe-wrapper .subscribe-btn:hover {
+  background-color: rgb(52.7830578512, 163.7169421488, 112.7231404959);
 }
 
-.products .card {
+.products .left-card {
   height: 470px;
 }
-.products .card h2 {
+.products .left-card h2 {
   position: relative;
 }
-.products .card h2::after {
+.products .left-card h2::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -86,11 +123,148 @@ nav .navbar__contactus h6 {
   bottom: 0;
   left: 0;
 }
-.products .card h6 {
+.products .left-card h6 {
   color: #3bb77e;
 }
-.products .card p {
+.products .left-card p {
   color: #7e7e7e;
+}
+.products .products__popular .product__card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.products .products__popular .product__card h5 {
+  font-size: 1rem;
+}
+.products .products__popular .product__card .product__tagwrapper {
+  width: 45%;
+  text-align: center;
+}
+.products .products__popular .product__card .product__tagwrapper .product__tag {
+  border-bottom-right-radius: 2rem;
+}
+.products .products__popular .product__card .product__tagwrapper .product-hot {
+  background-color: #f74b81;
+}
+.products .products__popular .product__card .product__tagwrapper .product-sale {
+  background-color: #67bcee;
+}
+.products .products__popular .product__card .product__tagwrapper .product-new {
+  background-color: #3bb77e;
+}
+.products .products__popular .product__card .product__tagwrapper .product-discount {
+  background-color: #f59758;
+}
+.products .products__popular .product__card .product__price p {
+  text-decoration: line-through;
+}
+
+.newsletter .container {
+  background-image: url("/assets/imgs/Footer → Section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+.newsletter h2 {
+  font-size: 2.2rem;
+}
+@media (max-width: 768px) {
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+}
+.newsletter .subscribe-wrapper {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.newsletter .subscribe-wrapper input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+.newsletter .subscribe-wrapper input::placeholder {
+  color: #999;
+}
+.newsletter .subscribe-wrapper i {
+  color: #3bb77e;
+  font-size: 1.2rem;
+}
+.newsletter .subscribe-wrapper .subscribe-btn {
+  background-color: #3bb77e;
+  border: none;
+  padding: 0 1.5rem;
+}
+.newsletter .subscribe-wrapper .subscribe-btn:hover {
+  background-color: rgb(52.7830578512, 163.7169421488, 112.7231404959);
+}
+
+.footer .footer-logo img {
+  width: 40px;
+}
+.footer ul li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #838383;
+  font-weight: 600;
+}
+.footer .follow-links li a {
+  text-decoration: none;
+}
+.footer .follow-links li a i {
+  font-size: 14px;
+  color: #fff;
+  background-color: #3bb77e;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer .img-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-bottom {
+  background-color: #fff;
+}
+.footer-bottom p {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+}
+.footer-bottom .text-success {
+  color: #3bb77e;
+}
+.footer-bottom i {
+  font-size: 1rem;
+}
+
+.promo .banner {
+  position: relative;
+  padding: 30px 20px;
+  min-height: 200px;
+  height: 100%;
+}
+.promo .banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.promo .banner .banner__content {
+  width: 40%;
+}
+.promo .banner h6 {
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 * {
@@ -100,6 +274,10 @@ nav .navbar__contactus h6 {
 body {
   font-family: "lato";
   color: #253d4e;
+}
+
+.main {
+  color: #3bb77e;
 }
 
 /*# sourceMappingURL=style.css.map */

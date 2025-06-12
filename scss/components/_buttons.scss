@@ -1,8 +1,12 @@
-@use "../variables" as*;
-
+@use "../variables" as *;
 
 .btn-custom {
-  background-color: $color-teal; 
-  border-color:$color-teal;     
+  background-color: $color-teal;
+  border-color: $color-teal;
 }
-
+.btn-add {
+  background-color: $color-mint-light;
+  border-color: $color-mint-light;
+  color:$color-teal;
+  font-size: 14px;
+}

@@ -1,0 +1,53 @@
+@use "../variables" as *;
+
+.newsletter {
+  .container {
+    background-image: url("/assets/imgs/Footer\ →\ Section.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .subscribe-wrapper {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+   
+
+    input {
+      flex-grow: 1;
+
+      border: none;
+      border-radius: 0;
+      outline: none;
+
+      &::placeholder {
+        color: #999;
+      }
+    }
+
+    i {
+      color: $color-teal;
+      font-size: 1.2rem;
+    }
+
+    .subscribe-btn {
+      background-color: $color-teal;
+      border: none;
+      padding: 0 1.5rem;
+      &:hover {
+        background-color: darken($color-teal, 5%);
+      }
+    }
+  }
+}

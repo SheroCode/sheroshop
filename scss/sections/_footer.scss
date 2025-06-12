@@ -1,0 +1,86 @@
+@use "../variables" as *;
+// .footer {
+//   .col {
+//     ul {
+//       li {
+//         margin-bottom: 0.75rem;
+//       }
+//     }
+//   }
+//   .follow-links {
+//     li {
+//       i {
+//         font-size: 14px;
+//         color: #ffff;
+//         background-color: $color-teal;
+//         width: 30px;
+//         height: 30px;
+//         border-radius: 50%;
+//         text-align: center;
+
+//       }
+//     }
+//   }
+// }
+@use "../variables" as *;
+
+.footer {
+  .footer-logo {
+    img {
+      width: 40px;
+    }
+  }
+
+   
+    ul {
+      li {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: $color-gray;
+        font-weight: 600;
+      }
+    }
+  
+
+  .follow-links {
+    li {
+      a {
+        text-decoration: none;
+        i {
+          font-size: 14px;
+          color: #fff;
+          background-color: $color-teal;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .img-wrapper {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+.footer-bottom {
+  background-color: #fff;
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+  }
+
+  .text-success {
+    color: $color-teal; // or use Bootstrap's text-success if it fits
+  }
+
+  i {
+    font-size: 1rem;
+  }
+}

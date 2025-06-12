@@ -1,8 +1,15 @@
 @use "../variables" as *;
 @use "../components/mixins";
 
+$colors: (
+  "hot": $color-pink,
+  "sale": $color-sky-blue,
+  "new": $color-teal,
+  "discount": $color-salmon,
+);
+
 .products {
-  .card {
+  .left-card {
     height: 470px;
     @extend %common;
     h2 {
@@ -22,6 +29,34 @@
     }
     p {
       color: $color-gray-lightest;
+    }
+  }
+  .products__popular {
+    .product__card {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      margin-bottom: 5px;
+      h5{
+        font-size: 1rem;
+      }
+      .product__tagwrapper {
+        width: 45%;
+        text-align: center;
+        .product__tag {
+          border-bottom-right-radius: 2rem;
+        }
+        @each $key, $value in $colors {
+          .product-#{$key} {
+            background-color: $value;
+          }
+        }
+      }
+
+      .product__price {
+        p {
+          text-decoration: line-through;
+        }
+      }
     }
   }
 }

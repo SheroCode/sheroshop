@@ -1,8 +1,8 @@
 @use "../variables" as *;
-@use "../components/mixins";
-.landding {
+@use "../components/mixins" as mix;
+.landing {
   .card {
-    height:479px ;
+    height: 500px;
     @extend %common;
     h2 {
       position: relative;
@@ -24,23 +24,56 @@
     border-radius: 2rem;
     background-image: url(/assets/imgs/Rectangle.png);
     background-size: contain;
-    padding: 91px  0 100px 75px;
-    p{
-        color:$color-gray
+    padding: 91px 75px 100px 75px;
+    p {
+      color: $color-gray;
     }
-    h1{
-        font-size: 4.5rem;
-        // line-height: 1;
+    h1 {
+      font-size: 4rem;
+      // line-height: 1;
     }
-    span {
-      position: relative;
-      right: 40px;
-    
-      text-align: center;
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 2rem;
+        }
+      }
     }
-    input{
-        width: 50%;
+
+    .subscribe-wrapper {
+      background-color: white;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+      input {
+        flex-grow: 1;
+
+        border: none;
+        border-radius: 0;
+        outline: none;
+
+        &::placeholder {
+          color: #999;
+        }
+      }
+
+      i {
+        color: $color-teal;
+        font-size: 1.2rem;
+      }
+
+      .subscribe-btn {
+        background-color: $color-teal;
+        border: none;
+        padding: 0 1.5rem;
+        &:hover {
+          background-color: darken($color-teal, 5%);
+        }
+      }
     }
   }
-
 }
