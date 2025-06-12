@@ -59,8 +59,8 @@ nav .navbar__contactus h6 {
 }
 .landing .banner-content {
   border-radius: 2rem;
-  background-image: url(/assets/imgs/Rectangle.png);
-  background-size: contain;
+  background-image: url(/assets/imgs/landing.jpg);
+  background-size: cover;
   padding: 91px 75px 100px 75px;
 }
 .landing .banner-content p {
@@ -160,7 +160,7 @@ nav .navbar__contactus h6 {
 }
 
 .newsletter .container {
-  background-image: url("/assets/imgs/Footer.png");
+  background-image: url("/assets/imgs/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
