@@ -1,28 +1,4 @@
 @use "../variables" as *;
-// .footer {
-//   .col {
-//     ul {
-//       li {
-//         margin-bottom: 0.75rem;
-//       }
-//     }
-//   }
-//   .follow-links {
-//     li {
-//       i {
-//         font-size: 14px;
-//         color: #ffff;
-//         background-color: $color-teal;
-//         width: 30px;
-//         height: 30px;
-//         border-radius: 50%;
-//         text-align: center;
-
-//       }
-//     }
-//   }
-// }
-@use "../variables" as *;
 
 .footer {
   .footer-logo {
@@ -30,8 +6,6 @@
       width: 40px;
     }
   }
-
-   
     ul {
       li {
         margin-bottom: 1rem;
@@ -77,7 +51,7 @@
   }
 
   .text-success {
-    color: $color-teal; // or use Bootstrap's text-success if it fits
+    color: $color-teal; 
   }
 
   i {
